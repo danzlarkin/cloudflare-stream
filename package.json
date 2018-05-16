@@ -1,0 +1,32 @@
+{
+  "name": "cloudflare-stream",
+  "description": "A minimalistic node.js package for easily uploading videos to Cloudflare Stream",
+  "keywords": [
+    "cloudflare",
+    "stream",
+    "video",
+    "upload"
+  ],
+  "version": "0.0.1",
+  "author": "Daniel Larkin <daniel@larkin.nz>",
+  "license": "MIT",
+  "homepage": "https://github.com/larkin-nz/cloudflare-stream#readme",
+  "bugs": {
+    "url": "https://github.com/larkin-nz/cloudflare-stream/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larkin-nz/cloudflare-stream.git"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^2.8.3",
+    "@types/node": "^10.1.0"
+  },
+  "dependencies": {
+    "tus-js-client": "^1.5.1"
+  }
+}
