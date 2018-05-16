@@ -10,7 +10,7 @@ Let's start off by installing the package via NPM.
 npm i cloudflare-stream
 ```
 
-Once you've done that, you're going to want to create an instance of a [CloudflareStream](#CloudflareStream) with your [credentials](#credentials).
+Once you've done that, you're going to want to create an instance of a [CloudflareStream](#cloudflarestream) with your [credentials](#credentials).
 
 ```js
 import { CloudflareStream } from 'cloudflare-stream';
@@ -22,7 +22,7 @@ const uploader = new CloudflareStream({
 ```
 
 Now that you've made an instance, you're going to want to upload your video to your zone.
-Let's create an [upload](#uploaduploadOptions) with your [upload options](#uploadOptions).
+Let's create an [upload](#uploaduploadoptions) with your [upload options](#uploadoptions).
 
 ```js
 const upload = uploader.upload({
@@ -31,9 +31,9 @@ const upload = uploader.upload({
 });
 ```
 
-The [upload](#uploaduploadOptions) method returns an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) which has three events ([progress](#uploadEventprogressmessage), [success](#uploadEventsuccessmessage), [error](#uploadEventerrormessage)).
+The [upload](#uploaduploadoptions) method returns an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) which has three events ([progress](#uploadeventprogressmessage), [success](#uploadeventsuccessmessage), [error](#uploadeventerrormessage)).
 
-Let's create some logs from your [upload events](#Upload_Events).
+Let's create some logs from your [upload events](#upload-events).
 
 ```js
 upload.on('progress', (progress) => {
@@ -93,7 +93,7 @@ A ```zone``` must be a valid [Cloudflare DNS Zone](https://www.cloudflare.com/le
 
 #### upload(uploadOptions)
 
-Returns an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) with three events ([progress](#uploadEventprogressmessage), [success](#uploadEventsuccessmessage), [error](#uploadEventerrormessage)).
+Returns an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) with three events ([progress](#uploadeventprogressmessage), [success](#uploadeventsuccessmessage), [error](#uploadeventerrormessage)).
 
 ##### uploadOptions
 ```ts

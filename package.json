@@ -6,9 +6,10 @@
     "cloudflare",
     "stream",
     "video",
-    "upload"
+    "upload",
+    "video streaming"
   ],
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": "Daniel Larkin <daniel@larkin.nz>",
   "license": "MIT",
   "homepage": "https://github.com/larkin-nz/cloudflare-stream#readme",
