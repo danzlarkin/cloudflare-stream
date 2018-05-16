@@ -2,12 +2,13 @@
   "name": "cloudflare-stream",
   "description": "A minimalistic node.js package for easily uploading videos to Cloudflare Stream",
   "keywords": [
+    "cloudflare stream",
     "cloudflare",
     "stream",
     "video",
     "upload"
   ],
-  "version": "0.0.1",
+  "version": "0.0.11",
   "author": "Daniel Larkin <daniel@larkin.nz>",
   "license": "MIT",
   "homepage": "https://github.com/larkin-nz/cloudflare-stream#readme",

@@ -22,7 +22,7 @@ const uploader = new CloudflareStream({
 ```
 
 Now that you've made an instance, you're going to want to upload your video to your zone.
-Let's create an [upload](#upload) with your [upload options](#uploadOptions).
+Let's create an [upload](#uploaduploadOptions) with your [upload options](#uploadOptions).
 
 ```js
 const upload = uploader.upload({
@@ -31,7 +31,7 @@ const upload = uploader.upload({
 });
 ```
 
-The [upload](#upload) method returns an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) which has three events ([progress](#uploadEvent.progress), [success](#uploadEvent.success), [error](#uploadEvent.error)).
+The [upload](#uploaduploadOptions) method returns an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) which has three events ([progress](#uploadEventprogressmessage), [success](#uploadEventsuccessmessage), [error](#uploadEventerrormessage)).
 
 Let's create some logs from your [upload events](#Upload_Events).
 
@@ -93,7 +93,7 @@ A ```zone``` must be a valid [Cloudflare DNS Zone](https://www.cloudflare.com/le
 
 #### upload(uploadOptions)
 
-Returns an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) with three events ([progress](#uploadEvent.progress), [success](#uploadEvent.success), [error](#uploadEvent.error)).
+Returns an [EventEmitter](https://nodejs.org/api/events.html#events_class_eventemitter) with three events ([progress](#uploadEventprogressmessage), [success](#uploadEventsuccessmessage), [error](#uploadEventerrormessage)).
 
 ##### uploadOptions
 ```ts
