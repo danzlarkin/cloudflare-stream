@@ -13,7 +13,7 @@ npm i cloudflare-stream
 Once you've done that, you're going to want to create an instance of a [CloudflareStream](#cloudflarestream) with your [credentials](#credentials).
 
 ```js
-import { CloudflareStream } from 'cloudflare-stream';
+const CloudflareStream = require('cloudflare-stream').CloudflareStream;
 
 const uploader = new CloudflareStream({
   email: 'sam@example.com', // cloudflare email address
