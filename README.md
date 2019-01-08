@@ -37,7 +37,7 @@ Let's create some logs from your [upload events](#upload-events).
 
 ```js
 upload.on('progress', (progress) => {
-  console.log(`${progress.precentage} of upload completed (${progress.uploaded} bytes / ${progress.total} bytes)`);
+  console.log(`${progress.percentage} of upload completed (${progress.uploaded} bytes / ${progress.total} bytes)`);
 });
 
 upload.on('error', (error) => {
